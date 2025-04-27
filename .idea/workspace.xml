@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a460c7d-b738-40ae-ba4b-29a9b4574842" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/com/example/ExampleModClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/com/example/mixin/client/ExampleClientMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/resources/modid.client.mixins.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ExampleMod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mixin/ExampleMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/modid/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/modid.mixins.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "dmnkdefault"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/dmnkdefault/defaultcalc.git",
+    "accountId": "00ff8765-53e1-4368-87f1-55e2a29d97d0"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2wI5MwraIPDUzDEoFNX5dNaKjxv" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "1.21",
+    "last_opened_file_path": "C:/Users/marcell/IdeaProjects/defaultcalc"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="defaultcalc.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Data" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="defaultcalc.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\dataRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\dataRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTestServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="defaultcalc.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\gameTestServerRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\gameTestServerRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="defaultcalc.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a460c7d-b738-40ae-ba4b-29a9b4574842" name="Changes" comment="" />
+      <created>1745716202679</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745716202679</updated>
+    </task>
+    <servers />
+  </component>
+</project>
