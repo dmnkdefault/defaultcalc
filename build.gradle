@@ -102,7 +102,7 @@ configurations {
 
 dependencies {
     // MathParser dependency marked for embedding
-    implementation 'net.neoforged:neoforge:21.1.164'
+    implementation 'net.neoforged:neoforge:21.1.146'
     implementation 'org.openjdk.nashorn:nashorn-core:15.4'
 
 }

@@ -19,7 +19,8 @@ import javax.script.ScriptException;
 @Mod(DefaultCalc.MODID)
 public class DefaultCalc {
     public static final String MODID = "defaultcalc";
-
+    public static final String NAME = Config.modDisplayName; // Use the configurable name
+    
     public DefaultCalc(IEventBus modEventBus) {
         modEventBus.addListener(this::clientSetup);
         NeoForge.EVENT_BUS.register(this);
