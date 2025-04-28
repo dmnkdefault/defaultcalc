@@ -11,7 +11,7 @@ loaderVersion="[1,)" #mandatory
 
 # The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
-license="All Rights Reserved"
+license="MIT"
 
 # A URL to refer people to when problems occur with this mod
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
@@ -35,17 +35,16 @@ displayName="defaultCalc" #mandatory
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 
 # A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="examplemod.png" #optional
+logoFile="defaultcalc64x.png" #optional
 
 # A text field displayed in the mod UI
 #credits="" #optional
 
 # A text field displayed in the mod UI
-authors="YourNameHere, OtherNameHere" #optional
+authors="https://github.com/dmnkdefault" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''Example mod description.
-Newline characters can be used and will be replaced properly.'''
+description='''Lightweight chat calculator mod. As easy as that :)'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 #[[mixins]]
@@ -69,7 +68,7 @@ Newline characters can be used and will be replaced properly.'''
     # Optional field describing why the dependency is required or why it is incompatible
     # reason="..."
     # The version range of the dependency
-    versionRange="[21.1.146,)" #mandatory
+    versionRange="[21.1.164,)" #mandatory
     # An ordering relationship for the dependency.
     # BEFORE - This mod is loaded BEFORE the dependency
     # AFTER - This mod is loaded AFTER the dependency

@@ -184,3 +184,11 @@ idea {
         downloadJavadoc = true
     }
 }
+
+processResources {
+    inputs.property "mod_icon_64x64", project.mod_icon_64x64
+    
+    filesMatching("neoforge.mods.toml") {
+        expand "mod_icon_64x64": project.mod_icon_64x64
+    }
+}
