@@ -4,6 +4,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.82'
     id 'idea'
     id 'com.github.johnrengelman.shadow' version '8.1.1' // <-- Diese Zeile hinzufügen
+
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -124,6 +125,7 @@ configurations {
 dependencies {
     // Füge mXparser hinzu (das hast du schon)
     implementation 'org.mariuszgromada.math:MathParser.org-mXparser:6.1.0'
+
     runtimeOnly 'org.mariuszgromada.math:MathParser.org-mXparser:6.1.0'
     // AKTIVIERE DIESE ZEILE (entferne die // davor!)
     // Sie verwendet die Variable neo_version aus gradle.properties
@@ -202,4 +204,14 @@ idea {
 
 tasks.named('jar') {
     enabled = false
+}
+
+// Füge ShadowJar zum Build-Task hinzu
+tasks.build.dependsOn tasks.shadowJar
+
+// ShadowJar Konfiguration
+shadowJar {
+    archiveClassifier.set('')
+    configurations = [project.configurations.runtimeClasspath]
+    exclude('**/com/defavlt/defaultcalc/**') // eigene Klassen nicht doppelt packen
 }
