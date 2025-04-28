@@ -37,36 +37,44 @@ public class DefaultCalc {
     }
 
     /**
-     * Registriert den rein client-seitigen /dc-Command.
+     * Registriert den rein client-seitigen /c-Command.
      * Der Server merkt nichts davon.
      */
     @SubscribeEvent
     public void onRegisterClientCommands(@NotNull RegisterClientCommandsEvent event) {
         event.getDispatcher().register(
-                Commands.literal("dc")
+                Commands.literal("c")  // Changed from "dc" to "c"
                         .then(Commands.argument("expr", StringArgumentType.greedyString())
                                 .executes(ctx -> {
-                                    // Ausdruck auslesen
-                                    String expr = ctx.getArgument("expr", String.class).trim();
-                                    Expression e = new Expression(expr);
+                                    try {
+                                        // Ausdruck auslesen
+                                        String expr = ctx.getArgument("expr", String.class).trim();
+                                        Expression e = new Expression(expr);
 
-                                    // Syntax & Berechnung
-                                    String reply;
-                                    if (!e.checkSyntax()) {
-                                        reply = "[Syntax Fehler]";
-                                    } else {
-                                        double result = e.calculate();
-                                        reply = Double.isNaN(result)
-                                                ? "[Ungültig]"
-                                                : "Ergebnis: " + formatResult(result);
+                                        // Syntax & Berechnung
+                                        String reply;
+                                        if (!e.checkSyntax()) {
+                                            reply = "§c[Syntax Fehler] §f" + e.getErrorMessage();
+                                        } else {
+                                            double result = e.calculate();
+                                            reply = Double.isNaN(result)
+                                                    ? "§c[Ungültig]"
+                                                    : "§aErgebnis: §f" + formatResult(result);
+                                        }
+
+                                        // Ausgabe im Client-Chat
+                                        LocalPlayer player = Minecraft.getInstance().player;
+                                        if (player != null) {
+                                            player.displayClientMessage(Component.literal(reply), false);
+                                        }
+                                    } catch (Exception ex) {
+                                        // Fehlerbehandlung hinzugefügt
+                                        LocalPlayer player = Minecraft.getInstance().player;
+                                        if (player != null) {
+                                            player.displayClientMessage(
+                                                    Component.literal("§c[Fehler] §f" + ex.getMessage()), false);
+                                        }
                                     }
-
-                                    // Ausgabe im Client-Chat
-                                    LocalPlayer player = Minecraft.getInstance().player;
-                                    if (player != null) {
-                                        player.displayClientMessage(Component.literal(reply), false);
-                                    }
-
                                     return 1;
                                 })
                         )
@@ -75,6 +83,10 @@ public class DefaultCalc {
 
     /** Formatiert Zahlen: Ganzzahl vs. Dezimal / wissenschaftliche Notation */
     private static String formatResult(double number) {
+        if (Double.isInfinite(number)) {
+            return number > 0 ? "Unendlich" : "-Unendlich";
+        }
+
         if (number == (long) number) {
             return String.format("%d", (long) number);
         } else if (Math.abs(number) < 1E-4 || (Math.abs(number) > 1E10 && number != 0)) {
