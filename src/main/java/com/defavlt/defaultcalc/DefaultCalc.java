@@ -1,98 +1,71 @@
 package com.defavlt.defaultcalc;
 
-// NeoForge-Bus & Lifecycle
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
-import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.client.event.RegisterClientCommandsEvent;
-
-// Minecraft & Chat-Ausgabe
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.network.chat.Component;
-
-// Brigadier für den Command
-import net.minecraft.commands.Commands;
+import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
+import net.minecraft.network.chat.Component;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterClientCommandsEvent;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
 
-// mXparser für die Mathematik
-import org.jetbrains.annotations.NotNull;
-import org.mariuszgromada.math.mxparser.Expression;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 
 @Mod(DefaultCalc.MODID)
 public class DefaultCalc {
     public static final String MODID = "defaultcalc";
 
-    public DefaultCalc(IEventBus bus) {
-        // Listener für das Client-Setup
-        bus.addListener(this::onClientSetup);
-        // NeoForge-Eventbus für client-seitige Commands
+    public DefaultCalc(IEventBus modEventBus) {
+        modEventBus.addListener(this::clientSetup);
         NeoForge.EVENT_BUS.register(this);
     }
 
-    private void onClientSetup(final FMLClientSetupEvent event) {
-        // hier kann weiterer Client-Init-Code stehen, wenn nötig
+    private void clientSetup(final FMLClientSetupEvent event) {
+        System.out.println("[" + MODID + "] client setup done");
     }
 
-    /**
-     * Registriert den rein client-seitigen /c-Command.
-     * Der Server merkt nichts davon.
-     */
     @SubscribeEvent
-    public void onRegisterClientCommands(@NotNull RegisterClientCommandsEvent event) {
-        event.getDispatcher().register(
-                Commands.literal("c")  // Changed from "dc" to "c"
+    public void onRegisterClientCommands(RegisterClientCommandsEvent event) {
+        CommandDispatcher<CommandSourceStack> dispatcher = event.getDispatcher();
+
+        dispatcher.register(
+                Commands.literal("c")
                         .then(Commands.argument("expr", StringArgumentType.greedyString())
                                 .executes(ctx -> {
+                                    String expr = StringArgumentType.getString(ctx, "expr");
+
                                     try {
-                                        // Ausdruck auslesen
-                                        String expr = ctx.getArgument("expr", String.class).trim();
-                                        Expression e = new Expression(expr);
+                                        ScriptEngineManager manager = new ScriptEngineManager();
+                                        ScriptEngine engine = manager.getEngineByName("JavaScript");
 
-                                        // Syntax & Berechnung
-                                        String reply;
-                                        if (!e.checkSyntax()) {
-                                            reply = "§c[Syntax Fehler] §f" + e.getErrorMessage();
-                                        } else {
-                                            double result = e.calculate();
-                                            reply = Double.isNaN(result)
-                                                    ? "§c[Ungültig]"
-                                                    : "§aErgebnis: §f" + formatResult(result);
+                                        if (engine == null) {
+                                            ctx.getSource().sendFailure(
+                                                    Component.literal("No JavaScript engine found!")
+                                            );
+                                            return 0;
                                         }
 
-                                        // Ausgabe im Client-Chat
-                                        LocalPlayer player = Minecraft.getInstance().player;
-                                        if (player != null) {
-                                            player.displayClientMessage(Component.literal(reply), false);
-                                        }
-                                    } catch (Exception ex) {
-                                        // Fehlerbehandlung hinzugefügt
-                                        LocalPlayer player = Minecraft.getInstance().player;
-                                        if (player != null) {
-                                            player.displayClientMessage(
-                                                    Component.literal("§c[Fehler] §f" + ex.getMessage()), false);
-                                        }
+                                        Object result = engine.eval(expr);
+
+                                        ctx.getSource().sendSuccess(
+                                                () -> Component.literal("defaultCalc: " + result),
+                                                false
+                                        );
+                                        return 1;
+
+                                    } catch (ScriptException e) {
+                                        ctx.getSource().sendFailure(
+                                                Component.literal("defaultCalc (error): " + e.getMessage())
+                                        );
+                                        return 0;
                                     }
-                                    return 1;
                                 })
                         )
         );
-    }
-
-    /** Formatiert Zahlen: Ganzzahl vs. Dezimal / wissenschaftliche Notation */
-    private static String formatResult(double number) {
-        if (Double.isInfinite(number)) {
-            return number > 0 ? "Unendlich" : "-Unendlich";
-        }
-
-        if (number == (long) number) {
-            return String.format("%d", (long) number);
-        } else if (Math.abs(number) < 1E-4 || (Math.abs(number) > 1E10 && number != 0)) {
-            return String.format("%.4G", number);
-        } else {
-            return String.format("%.4f", number).replaceAll("\\.?0*$", "");
-        }
     }
 }

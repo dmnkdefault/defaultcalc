@@ -16,25 +16,34 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/defaultcalc.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/defaultcalc.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/modMetadata/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/modMetadata/META-INF/neoforge.mods.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.164-merged.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.164-merged.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.164-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.164-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.164.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/artifacts/neoforge-21.1.164.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/clientLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/clientLegacyClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/clientLog4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/clientLog4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/clientRunProgramArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/clientRunProgramArgs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/clientRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/clientRunVmArgs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/dataLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/dataLegacyClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/dataLog4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/dataLog4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/dataRunProgramArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/dataRunProgramArgs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/dataRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/dataRunVmArgs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/gameTestServerLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/gameTestServerLegacyClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/gameTestServerLog4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/gameTestServerLog4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/gameTestServerRunProgramArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/gameTestServerRunProgramArgs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/gameTestServerRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/gameTestServerRunVmArgs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/serverLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/serverLegacyClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/serverLog4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/serverLog4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/serverRunProgramArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/serverRunProgramArgs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/moddev/serverRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/serverRunVmArgs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/downloadAssets/nfrt_artifact_manifest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/downloadAssets/nfrt_artifact_manifest.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/defavlt/defaultcalc/DefaultCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/defavlt/defaultcalc/DefaultCalc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +77,36 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="defaultcalc" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="mod development" type="c8890929:TasksNode$1" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="defaultcalc" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="mod development/internal" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="defaultcalc" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="defaultcalc" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="defaultcalc" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="defaultcalc" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
@@ -100,21 +138,28 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build defaultcalc.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.defaultcalc [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.defaultcalc [runClient].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.defaultcalc [shadowJar].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;1.21&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/leonk/Documents/GitHub/defaultcalc&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build defaultcalc.executor": "Run",
+    "Gradle.defaultcalc [build].executor": "Run",
+    "Gradle.defaultcalc [compileJava].executor": "Run",
+    "Gradle.defaultcalc [dependencies].executor": "Run",
+    "Gradle.defaultcalc [jar].executor": "Run",
+    "Gradle.defaultcalc [runClient].executor": "Run",
+    "Gradle.defaultcalc [runData].executor": "Run",
+    "Gradle.defaultcalc [shadowJar].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "1.21",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/leonk/Documents/GitHub/defaultcalc",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -122,12 +167,12 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.defaultcalc [runData]">
+  <component name="RunManager" selected="Gradle.defaultcalc [build]">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="defaultcalc.main" />
-      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\moddev\\clientRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,8 +181,8 @@
     <configuration name="Data" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="defaultcalc.main" />
-      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\moddev\\dataRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\moddev\\dataRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\dataRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\dataRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,8 +191,8 @@
     <configuration name="GameTestServer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="defaultcalc.main" />
-      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\moddev\\gameTestServerRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\moddev\\gameTestServerRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\gameTestServerRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\gameTestServerRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,14 +201,14 @@
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="defaultcalc.main" />
-      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\moddev\\serverRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\classes\\java\\main;defaultcalc%%C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="defaultcalc [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="defaultcalc [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -174,7 +219,51 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="defaultcalc [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="defaultcalc [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -229,34 +318,13 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="defaultcalc [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="shadowJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.defaultcalc [runData]" />
-        <item itemvalue="Gradle.defaultcalc [dependencies]" />
-        <item itemvalue="Gradle.defaultcalc [shadowJar]" />
+        <item itemvalue="Gradle.defaultcalc [build]" />
+        <item itemvalue="Gradle.defaultcalc [jar]" />
         <item itemvalue="Gradle.defaultcalc [runClient]" />
+        <item itemvalue="Gradle.defaultcalc [compileJava]" />
+        <item itemvalue="Gradle.defaultcalc [runData]" />
       </list>
     </recent_temporary>
   </component>
@@ -312,5 +380,8 @@
     <MESSAGE value="5:51" />
     <MESSAGE value="28.04.19.30" />
     <option name="LAST_COMMIT_MESSAGE" value="28.04.19.30" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/defaultcalc$defaultcalc__build_.ic" NAME="defaultcalc [build] Coverage Results" MODIFIED="1745877479295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

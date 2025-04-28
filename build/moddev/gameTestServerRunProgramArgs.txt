@@ -7,7 +7,7 @@ forgeserveruserdev
 --gameDir
 .
 --fml.neoForgeVersion
-21.1.164
+21.1.146
 --fml.fmlVersion
 4.0.38
 --fml.mcVersion
