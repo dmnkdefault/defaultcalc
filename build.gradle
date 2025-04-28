@@ -147,15 +147,11 @@ shadowJar {
     finalizedBy 'reobfShadowJar'
 }
 
-// Create a task to reobfuscate the shadow JAR
-reobf {
-    shadowJar {}
-}
-
 // Override the default artifact with the shadow jar
 artifacts {
     archives shadowJar
 }
+
 
 tasks.build.dependsOn tasks.shadowJar
 
