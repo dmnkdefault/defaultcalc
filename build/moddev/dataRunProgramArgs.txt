@@ -7,7 +7,7 @@ forgedatauserdev
 --assetIndex
 17
 --assetsDir
-C:\\Users\\marcell\\.gradle\\caches\\neoformruntime\\assets
+C:\\Users\\leonk\\.gradle\\caches\\neoformruntime\\assets
 --gameDir
 .
 --fml.neoForgeVersion
@@ -24,6 +24,6 @@ C:\\Users\\marcell\\.gradle\\caches\\neoformruntime\\assets
 defaultcalc
 --all
 --output
-C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\src\\generated\\resources
+C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\src\\generated\\resources
 --existing
-C:\\Users\\marcell\\IdeaProjects\\defaultcalc\\src\\main\\resources
+C:\\Users\\leonk\\Documents\\GitHub\\defaultcalc\\src\\main\\resources

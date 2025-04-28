@@ -1,4 +1,5 @@
 plugins {
+    id 'java'
     id 'java-library'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.82'
@@ -30,7 +31,12 @@ base {
     archivesName = mod_id
 }
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+
+    toolchain.languageVersion = JavaLanguageVersion.of(21);
+}
 
 neoForge {
     version = project.neo_version
@@ -129,22 +135,10 @@ neoForge.ideSyncTask generateModMetadata
 
 // Configure shadow JAR to include dependencies from 'embed' configuration
 shadowJar {
-    archiveClassifier.set('')
-
-    // Include only the dependencies from the 'embed' configuration
-    configurations = [project.configurations.embed]
-
-    // Relocate the mXparser to avoid conflicts
-    relocate 'org.mariuszgromada.math.mxparser', 'com.defavlt.defaultcalc.shadow.org.mariuszgromada.math.mxparser'
-
-    // Merge service files correctly
     mergeServiceFiles()
-
-    // Make sure we include all the main classes too
-    from sourceSets.main.output
-
-    // Ensure it gets reobfuscated
-    finalizedBy 'reobfShadowJar'
+    manifest {
+        attributes 'Main-Class': 'com.defaultcalc.gui.MainFrame'
+    }
 }
 
 // Override the default artifact with the shadow jar
